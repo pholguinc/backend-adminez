@@ -1,0 +1,25 @@
+meta {
+  name: Listar Cursos Paginado
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{adminez_url}}/courses/list
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "page": 1,
+    "page_limit": 5,
+    "p_codigo": "",
+    "p_nomCurso": "",
+    "p_idEntidad": null,
+    "p_idiomaCurso": null,
+    "p_idFranquicia": null,
+    "p_estCurso": 1
+  }
+  
+}
