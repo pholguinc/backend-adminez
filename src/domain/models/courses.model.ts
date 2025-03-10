@@ -21,6 +21,6 @@ export interface CoursesModel {
   fechaEliminar?: string;
   id_categoria?: number;
   TipoRubro?: number;
-  page: number;
-  page_limit: number;
+  page?: number;
+  page_limit?: number;
   }
