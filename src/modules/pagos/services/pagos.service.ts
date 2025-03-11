@@ -19,7 +19,7 @@ export class PagosService {
   
       const response = await firstValueFrom(
         this.httpService.post(
-          'https://sandbox-api-pw.izipay.pe/security/v1/Token/Generate',
+          'https://api-pw.izipay.pe/security/v1/Token/Generate',
           requestBody,
           { headers }, 
         ),
